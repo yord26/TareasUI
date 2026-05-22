@@ -1,10 +1,12 @@
+import '../styles/TareaCard.css'
+
 function TareaCard({ titulo, descripcion }) {
     return (
-      <div style={{ border: "1px solid #ccc", borderRadius: "8px", padding: "1rem", margin: "0.5rem" }}>
+      <div className="tarea-card">
         <h3>{titulo}</h3>
         <p>{descripcion}</p>
       </div>
     )
   }
-  
+
   export default TareaCard
