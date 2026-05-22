@@ -1,0 +1,58 @@
+.hero-banner {
+  background: linear-gradient(135deg, var(--accent-bg), var(--bg));
+  border-bottom: 1px solid var(--border);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero-banner h1 {
+  font-size: 3rem;
+  margin: 0 0 1rem;
+  background: linear-gradient(135deg, var(--accent), var(--text-h));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-banner p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.hero-banner .hero-cta {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 2rem;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: opacity 0.3s;
+}
+
+.hero-banner .hero-cta:hover {
+  opacity: 0.85;
+}
+
+@media (max-width: 640px) {
+  .hero-banner {
+    padding: 2.5rem 1.25rem;
+  }
+
+  .hero-banner h1 {
+    font-size: 2rem;
+  }
+
+  .hero-banner p {
+    font-size: 1rem;
+  }
+
+  .hero-banner .hero-cta {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.95rem;
+  }
+}
